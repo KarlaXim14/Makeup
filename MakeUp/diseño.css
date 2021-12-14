@@ -1,0 +1,356 @@
+#snackbar {
+  font-family: "Times New Roman", Times, serif;
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: rgb(255, 1, 158); /* Black background color */
+    color: rgb(5, 5, 5); /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 20px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 35px; /* 30px from the bottom */
+  }
+  
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+ 
+  
+ 
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+
+.box{
+  margin: 100px auto;
+  width: 300px;
+  height: 50px;
+}
+
+.Search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(22, 22, 22, 0.1)
+}
+
+.search input.group {
+    height: 20px;
+    text-indent: 25px;
+    border: 2px solid #85f3f7
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid rgb(121, 121, 122)
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: rgb(38, 38, 41)
+}
+
+body{
+  font-family: "Times New Roman", Times, serif;
+}
+header{
+  background-color: rgb(191, 130, 219);
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  position: fixed;
+  width: 100%;
+  margin-top: -10px;
+  z-index: 99;
+}
+@keyframes example {
+  0%   {background-color:rgba(245, 22, 126, 0.548)(255, 0, 98); }
+  25%  {background-color:rgba(214, 13, 56, 0.808); }
+  50%  {background-color:rgba(149, 18, 224, 0.719); }
+  75%  {background-color:rgba(231, 7, 101, 0.904); }
+  100% {background-color:rgb(231, 133, 193) (6); }
+}
+div.container-fluid{
+  background-image: linear-gradient(rgba(248, 85, 153, 0.719), rgb(78, 243, 235));
+  width: 95%;
+  height: 120px;
+  
+ 
+}
+.container{
+  max-width: 1200px;
+  text-align: center;
+  margin: auto;
+  
+
+}
+.header-section{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  position: relative;
+}
+.header-section div{
+  position: relative;
+}
+.header-section p{
+  position: absolute;
+  top: -24px;
+  right: -8px;
+  background-color: rgb(50, 121, 252);
+  padding: 1px 6px;
+  border-radius: 50%;
+  font-weight: 700;
+  border-style: groove;
+  font-family: system-ui;
+  line-height: 18px;
+}
+.logo{
+  width: 164px;
+  height: 84px;
+  cursor: pointer;
+  }
+.cart{
+  width: 49x;
+  height: 45px;
+  
+}
+.cart-Articulos{
+  position: absolute!important;
+  top: 122px;
+  right: -43px;
+  background-color: rgb(255, 255, 255);
+  padding: 0 18px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  display: none;
+  border-style: solid;
+  border-color: hotpink;
+
+  min-width: 290px;
+}
+/* .cart:hover{
+  margin-bottom: 16px;
+  transition-duration: .5s;
+} */
+.cart:hover{
+  margin-bottom: 16px;
+  transition-duration: .5s;
+}
+/*end header*/
+.Articulos{
+  /* margin-top: 60px; */
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.carts{
+  max-width: 250px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  padding-bottom: 34px;
+  margin-bottom: 40px;
+ 
+}
+.carts img{ 
+  padding: 10px;
+  width: 90px;
+  
+}
+.carts p{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding: 0 20px;
+  margin-bottom: 28px;
+}
+.carts div p{
+  position:static;
+  top: 0;
+  right: 0px;
+  background-color: rgb(71, 179, 187);
+  color: rgb(252, 6, 157);
+  padding: 2px 1px 4px 5px;
+  
+}
+.carts div{
+  position: center;
+  width: 250px;
+  height: 150px;
+  border-style: outset;
+  border-color: rgb(250, 6, 140);
+}
+.carts a{
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: none;
+  background: rgb(255, 27, 206);
+  padding: 9px 23px;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.carts a:hover{
+  background: #fff;
+  color: rgb(247, 30, 247);
+  border: solid 2px rgb(138, 2, 54);
+  transition-duration: .3s;
+}
+/* .carts a:hover + .cart-products{
+  display: block;
+} */
+/*float cart*/
+.cart-Articulos .item img{
+  width: 115px;
+}
+
+.cart-Articulos .item{
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px rgb(255, 0, 140);
+}
+.cart-Articulos .item .item-content{
+  margin: 0 19px;
+  width: 201px;
+}
+.cart-Articulos .item .item-content h5{
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+}
+.cart-products .item .item-content h6{
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+}
+.cart-Articulos .item span{
+  background-color: rgb(102, 255, 0);
+  padding: 0px 5px;
+  border-radius: 80%;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+.cart-Articulos h3{
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 0;
+}
+.cart-Articulos .item .item-content h5.cart-price{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+
+/*stye to btn close*/
+p.close-btn{
+  top: -4px;
+  right: 6px;
+  cursor: pointer;
+  color: #000;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #212121;
+}
+
+form {
+	width: 200px;
+	height: 40px;
+	margin: 100px auto 0;
+	position: relative;
+}
+
+#submit {
+	display: none;	
+}
+
+form .icon, form .submit {
+	width: 35px;
+	height: 35px;
+	background: #d75813;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-shadow:
+		0px 5px #bc490a,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+form .submit {
+	background: #009bff;
+	cursor: pointer;
+	box-shadow:
+		0px 5px #0276c1,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Now, we'll create a search (magnifying glass) icon using pseudo elements */
+form .icon:after, form .submit:after  {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 2px solid white;
+	border-radius: 50%;
+	left: 10px;
+	top: 9px;
+}
+
+form .icon:before, form .submit:before {
+	content: '';
+	position: absolute;
+	height: 8px;
+	width: 2px;
+	background: white;
+	transform: rotate(-35deg);
+	top: 19px;
+	left: 21px;
+}
+
+/* Styling the input */
+form #search {
+	-webkit-appearance: none;
+	height: 35px;
+	width: 0;
+	position: absolute;
+	padding: 0;
+	opacity: 0;
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 35px;
+	box-shadow:
+		0px 5px #bbb,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,19 @@
+{
+    "theme_color": "pink",
+    "background_color": "pink",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "index.html",
+    "name": "Make Up Karlita",
+    "short_name": "PWA",
+    "id": "index.html",
+    "description": "Cosmeticos",
+    "icons": [
+        {
+            "src": "./images/LOGO.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+       
+    ]
+}

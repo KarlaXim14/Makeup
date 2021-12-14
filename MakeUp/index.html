@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Keywords">
+    <link rel="stylesheet" href="diseño.css">
+    <link rel="manifest" href="manifest.json">
+    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Make Up Karlita</title>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="header-section container">
+            <h1><img src="https://fontmeme.com/permalink/211212/d1cfc8b93e579220cdce37dc843ca26b.png" alt="valline-wish-font" border:0></h1>
+              <form class="d-flex">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="search">
+                      <button class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                      </button>
+                    
+                </div>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/361332.png" alt="">
+                <p class="count-articulo">0</p>
+            </div>
+            <div class="cart-Articulos" id="Articulos-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Añadir a la Bolsa</h3>
+                <div class="card-items">
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="container">  
+        <div class="container-fluid"><h2><br><img src="https://fontmeme.com/permalink/211213/304c7bffa5c8472ae4b55f699658afdb.png" alt="communist-font" borde:0></div> 
+        <div class="Articulos">
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Base.jpg" alt="">
+                    <p>$<span>450</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title">Base de Maquillaje de Alta Cobertura Larga Duración</p>
+                <a href="" data-id="1" class="btn-add-cart">+</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Brochas.jpg" alt="">
+                    <p>$<span>100</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title"> 7 Piezas Set de Brochas de Maquillaje Edición Limitada</p>
+                <a href="" class="btn-add-cart" data-id="2">+</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Bronceador.jpg" alt="">
+                    <p>$<span>200</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title">Bronceador Liquído Face Destellos de Sol</p>
+                <a href="" data-id="3" class="btn-add-cart">+</a>
+            </div>
+            <div class="carts">
+                <div>
+                
+                    <img src="./images/Articulos/Limpiador.jpeg" alt="">
+                    <p>$<span>80</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title">YourSelf Limpiador de Brochas Latitas</p>
+                <a href="" data-id="4" class="btn-add-cart">+</a>
+            </div>
+            <div class="carts">
+                <div>
+                    
+                    <img src="./images/Articulos/Correctores.jpg" alt="">
+                    <p>$<span>350</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title">Paleta de Correctores Verano</p>
+                <a href="" data-id="5" class="btn-add-cart">+</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Esponja.jpg" alt="">
+                    <p>$<span>80</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title"> Esponja Delight Para Base de Maquillaje</p>
+                <a href="" data-id="6" class="btn-add-cart">+</a>
+            </div>
+            
+                
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Iluminador.jpg" alt="">
+                    <p>$<span>200</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title">Iluminador Sun Destellos de Exito Con Más Calidad </p>
+                <a href="" data-id="7" class="btn-add-cart">+</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Kit de Brochas.jpg" alt="">
+                    <p>$<span>120</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title"> Kit de Brochas Para Sombras Para Estar Feliz Como una Lombriz </p>
+                <a href="" data-id="8" class="btn-add-cart">+</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Labiales.jpg" alt="">
+                    <p>$<span>290</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title">Labiales Indeleble Mate Larga Duración Con Extraxcto de Alga de Himalaya </p>
+                <a href="" data-id="9" class="btn-add-cart">+</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Som.jpg" alt="">
+                    <p>$<span>400</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title">Sombras Explosión Con Aroma Frutal y Encantable</p>
+                <a href="" data-id="10" class="btn-add-cart">+</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Sombasex.jpg" alt="">
+                    <p><span>342</span>$</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title">Kit de Sombras, Único e Iniguable Como Tú</p>
+                <a href="" data-id="11" class="btn-add-cart">+</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/Articulos/Sombras.jpg" alt="">
+                    <p>$<span>342</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <p class="title">Sombras Luce Naturalmente Bella Con Extractos de Argán</p>
+                <a href="" data-id="12" class="btn-add-cart">+</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function showCart(x){
+            document.getElementById("Articulos-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("Articulos-id").style.display = "none";
+        }
+
+    </script>
+
+
+    <div id="snackbar"><a id="launchUpdate">¡Actualizacion Completa!</a></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
